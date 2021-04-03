@@ -21,7 +21,6 @@ git reset HEAD <file>  暂存区和版本区保持一致
 git checkout <file>    暂存区（如果暂存区无内容，将使用版本区）内容覆盖工作区内容
 git rm <file> --cached 删除暂存区文件
 git commit -a -m <msg> = git add . + git commit -m 'msg' 一次性将工作区提交到暂存区，再到版本区
-git reset --head <version>  恢复版本区指定版本到工作区
-
+git reset --hard <version>  恢复版本区指定版本到工作区
 ```
 # GitHub远程提交
