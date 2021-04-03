@@ -14,7 +14,7 @@ import {
 export default {
   name: 'App',
   setup() {
-    const count = reactive({
+    const count = ref({
       a: {
         b:1
       }
