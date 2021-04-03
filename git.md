@@ -65,5 +65,5 @@ git push <远程主机名> --delete master      删除远程仓库上的master�
 git fetch    通常通过互联网（使用 http:// 或 git:// 协议) 与远程仓库通信,获取工作区没有的数据，它可能已经将进行这一操作所需的所有数据都下载了下来，但是并没有修改你本地的文件。
              所以，你可以将 git fetch 的理解为单纯的下载操作。
 git pull <远程主机名> <远程分支名>:<本地分支名>     从远程仓库更新到本地仓库,远程载入合并本地分支
-                                               相当于 git fetch + git merge <name>/master
+                                               相当于 git fetch + git merge <远程主机名/别名>/<本地分支名>
 ```
