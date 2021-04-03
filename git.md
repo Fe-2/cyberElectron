@@ -16,7 +16,7 @@ git commit -m <file>  将文件提交到版本区 -a 表示添加所有变化文
 
 git diff           比较工作区和暂存区的文件差异
 git diff --cached  比较暂存区和版本区的文件差异
-git diff master    比较工具去和版本区的文件差异, master代表主分支，比较不同分支替换分支名称即可
+git diff <本地分支名>    比较工具去和版本区的文件差异, master代表主分支，比较不同分支替换分支名称即可
 git diff <本地分支名> <远程主机名>/<远程分支名>   比较工作区与远程仓库的文件差异
 git diff <local/filepath> <remote/filepath>  单个文件作比较
 
