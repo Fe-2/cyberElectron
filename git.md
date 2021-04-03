@@ -20,8 +20,8 @@ git diff <本地分支名>                          比较工具去和版本区�
 git diff <本地分支名> <远程主机名>/<远程分支名>   比较工作区与远程仓库的文件差异
 git diff <local/filepath> <remote/filepath>  单个文件作比较
 
-git reset HEAD <file>       暂存区和版本区保持一致
-git reset --hard <version>  恢复版本区指定版本到工作区
+git reset HEAD <file>       恢复暂存区差异文件到工作区
+git reset --hard <version>  恢复版本区指定版本到工作区  --soft  恢复版本区指定版本到暂存区
 git checkout <file>         暂存区（如果暂存区无内容，将使用版本区）内容覆盖工作区内容
 git restore <file>     丢弃工具区改动（回滚） --staged   取消暂存区变化
 git rm <file> --cached 删除暂存区文件
