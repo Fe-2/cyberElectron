@@ -10,8 +10,8 @@ git status  查看当前文件状态
 git log 输出提交记录日志
 git reflog  查看引用版本号
 
-git add  <file>/ .  将文件提交到暂存区    . 表示添加所有变化文件
-git commit -m <file>/ -a  将文件提交到版本区 -a 表示添加所有变化文件
+git add  <file>/ .    将文件提交到暂存区    . 表示添加所有变化文件 或者 -A  --all
+git commit -m <file>  将文件提交到版本区 -a 表示添加所有变化文件
 
 git diff           比较工作区和暂存区的文件差异
 git diff --cached  比较暂存区和版本区的文件差异
