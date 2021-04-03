@@ -34,7 +34,7 @@ git branch -d <本地分支名>   删除分支
 git checkout <本地分支名>    切换分支
 git checkout -b <本地分支名> 创建分支并切换  
 
-git merge <本地分支名>   合并分支
+git merge <本地分支名>       合并分支
 git rebase -i <合并开始记录版本号><合并结束记录版本号>         变基（变成基本记录），可以使提交记录更简洁
 ```
 # GitHub远程提交
