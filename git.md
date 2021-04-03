@@ -27,12 +27,12 @@ git rm <file>          同时删除工作区和版本区文件
 git commit -a -m <msg> = git add . + git commit -m 'msg' 一次性将工作区提交到暂存区，再到版本区（第一次提交不可用，第一次提交必须先git add .）
 
 git branch             查看分支
-git branch <name>      创建分支
-git branch -d <name>   删除分支
-git checkout <name>    切换分支
-git checkout -b <name> 创建分支并切换  
+git branch <本地分支名>      创建分支
+git branch -d <本地分支名>   删除分支
+git checkout <本地分支名>    切换分支
+git checkout -b <本地分支名> 创建分支并切换  
 
-git merge <name>   合并分支
+git merge <本地分支名>   合并分支
 ```
 # GitHub远程提交
 
