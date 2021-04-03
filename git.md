@@ -54,11 +54,14 @@ UserKnownHostsFile ~/.ssh/known_hosts
 ##### 2. git 远程提交命令
 ```
 git remote add <name> <远程仓库地址>       关联远程仓库
-git remote rm <name>                     删除远程仓库
+git remote rm <name>                     删除远程仓库链接，不会删除远程仓库
 git remote rename <old_name> <new_name>  修改仓库名
 git push -u origin master                将本地master推送到远程仓库  git push <远程主机名> <本地分支名>:<远程分支名>
                                          --allow-unrelated-histories 如果远程仓库不是新建的可能会提交失败，合并远程仓库和本地仓库加上 
                                          -u                          首次推送 ，后续执行推送不需要
                                          --force                     强制推送
 git push <远程主机名> --delete master      删除远程仓库上的master分支
+
+git fetch    通常通过互联网（使用 http:// 或 git:// 协议) 与远程仓库通信,获取工作区没有的数据，它可能已经将进行这一操作所需的所有数据都下载了下来，但是并没有修改你本地的文件。所以，你可以将 git fetch 的理解为单纯的下载操作。
+git pull     从远程仓库更新到工作区，不会影响暂存区和版本区，后续提交会进行合并
 ```
