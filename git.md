@@ -35,3 +35,5 @@ git checkout -b <name> 创建分支并切换
 git merge <name>   合并分支
 ```
 # GitHub远程提交
+
+### Github SSH指南：https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key
