@@ -56,5 +56,9 @@ UserKnownHostsFile ~/.ssh/known_hosts
 git remote add <name> <远程仓库地址>       关联远程仓库
 git remote rm <name>                     删除远程仓库
 git remote rename <old_name> <new_name>  修改仓库名
-git push -u origin master                将本地master推送到远程仓库（第一次执行加上 -u ，后面执行推送可以不需要） 如果远程仓库不是新建的可能会提交失败，合并远程仓库和本地仓库加上  --allow-unrelated-histories
+git push -u origin master                将本地master推送到远程仓库  git push <远程主机名> <本地分支名>:<远程分支名>
+                                         --allow-unrelated-histories 如果远程仓库不是新建的可能会提交失败，合并远程仓库和本地仓库加上 
+                                         -u                          首次推送 ，后续执行推送不需要
+                                         --force                     强制推送
+git push <远程主机名> --delete master      删除远程仓库上的master分支
 ```
