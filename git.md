@@ -42,10 +42,19 @@ git merge <name>   合并分支
 
 ##### https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
 
+##### 解决SSH登录时出现(Warning: Permanently added the RSA host key for IP address '13.229.188.59' to the list of known hosts.)告警问题
+```
+创建~/.ssh/config文件，内容如下：
+UserKnownHostsFile ~/.ssh/known_hosts
+```
+
+
 
 ##### 1. 按照GitHub官方指导生成本机的SSH-key  并添加到对应的项目中
 ##### 2. git 远程提交命令
 ```
-git remote add origin <远程仓库地址>   关联远程仓库
+git remote add <name> <远程仓库地址>   关联远程仓库
+git remote rm <name>                   # 删除远程仓库
+git remote rename <old_name> <new_name>  # 修改仓库名
 git push -u origin master            将本地master推送到远程仓库（第一次执行加上 -u ，后面执行推送可以不需要） 如果远程仓库不是新建的可能会提交失败，合并远程仓库和本地仓库加上  --allow-unrelated-histories
 ```
