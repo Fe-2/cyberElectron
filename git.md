@@ -7,7 +7,7 @@ git config --list                                      输出配置信息
 
 git init    在当前目录初始化git
 git status  查看当前文件状态
-git log     输出提交记录日志
+git log     输出提交记录日志 --name-status每次修改的文件列表, 显示状态  --name-only 每次修改的文件列表  
 git log --oneline --graph   图形化提交记录
 git reflog  查看引用版本号
 
@@ -19,6 +19,7 @@ git diff --cached                            比较暂存区和版本区的文�
 git diff <本地分支名>                          比较工具去和版本区的文件差异
 git diff <本地分支名> <远程主机名>/<远程分支名>   比较工作区与远程仓库的文件差异
 git diff <local/filepath> <remote/filepath>  单个文件作比较
+git diff <版本号>:filename <版本号>:filename 查看某两个版本的某个文件之间的差异
 
 git reset HEAD <file>       恢复暂存区差异文件到工作区
 git reset --hard <version>  恢复版本区指定版本到工作区  --soft  恢复版本区指定版本到暂存区
