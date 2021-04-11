@@ -52,8 +52,6 @@ git rebase -i <合并开始记录版本号><合并结束记录版本号> / HEAD~
 UserKnownHostsFile ~/.ssh/known_hosts
 ```
 
-
-
 ##### 1. 按照GitHub官方指导生成本机的SSH-key  并添加到对应的项目中
 ##### 2. git 远程提交命令
 ```
